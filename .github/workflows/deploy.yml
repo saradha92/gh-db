@@ -16,6 +16,7 @@ jobs:
         with:
           path: ~/.npm
           key: npm-deps-${{ hashFiles('**/package-lock.json') }}
+          
       - name: Install dependencies
         run: npm ci
       - name: Run server
@@ -29,5 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output information
-        run: |        
-          echo "..."
+        run: echo "..."
