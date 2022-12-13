@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run server
-        run: npm start & npx wait-on http://34.226.104.79:27017
+        run: npm start & npx wait-on http://127.0.0.1:27017
       - name: Run tests
         run: npm test
       - name: Output information
