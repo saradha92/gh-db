@@ -20,6 +20,6 @@ try {
   console.log('Connection closed.');
 }
 
-const database = client.db(dbName);
+const database = client.db(MONGODB_NAME);
 
 export default database;
