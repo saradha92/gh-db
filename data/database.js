@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb';
 const MONGODB_URL = process.env.MONGODB_URL;
 const MONGODB_USERNAME = process.env.MONGODB_USERNAME;
 const MONGODB_PASSWD = process.env.MONGODB_PASSWD;
-const MONGODB_NAME = process.env.MONGODB_DB_NAME;
+const MONGODB_NAME = process.env.MONGODB_NAME;
 const MONGODB_PORT = process.env.MONGODB_PORT
 
 const uri = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWD}@${MONGODB_URL}/{MONGODB_NAME}?retryWrites=true&w=majority`;
