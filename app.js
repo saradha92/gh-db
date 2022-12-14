@@ -9,4 +9,4 @@ app.use(bodyParser.json());
 
 app.use(eventRoutes);
 
-app.listen(process.env.PORT);
+app.listen(process.env.MONGODB_PORT);
